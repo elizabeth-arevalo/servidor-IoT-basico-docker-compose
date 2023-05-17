@@ -37,7 +37,7 @@ Para realizar este ejercicio necesitas lo siguiente
 - [Ubuntu 20.04](https://releases.ubuntu.com/20.04/)
 - [Docker Engine](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
 - [Mosquitto Docker Image](https://hub.docker.com/_/eclipse-mosquitto/)
-- [NodeRed Docker Image](https://hub.docker.com/r/nodered/node-red-docker/)
+- [NodeRed Docker Image](https://hub.docker.com/r/nodered/node-red)
 - [MySQL Docker Image](https://hub.docker.com/_/mysql)
 
 ### Material de referencia
