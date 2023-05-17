@@ -114,6 +114,14 @@ Para entrar a la terminal de MySQL ejecuta el siguiente comando. Usa la contrase
 ```
 docker exec -it [id_del_contenedor]] mysql -u root -p [contraseña_en_yaml]
 ```
+Para comprobar el funcionamiento del Broker Mosqutto, solo envía un mensaje MQTT a la IP de tu equipo en tu red local.
+
+## Resultado
+
+A continuación puedes ver una captura de como se ve cuando los contenedores funcionan.
+![](https://github.com/hugoescalpelo/servidor-IoT-basico-docker-compose/blob/main/img/img01.png)
+
+![](https://github.com/hugoescalpelo/servidor-IoT-basico-docker-compose/blob/main/img/img02.png)
 
 
 # FAQ
