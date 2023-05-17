@@ -93,19 +93,27 @@ Para poder realziar este servidor, necesitas contar con lo siguiente
 ## Instrucciones de operación
 Para arrancar un contenedor usa el siguiente comando.
     
-    ```docker start [id_del_contenedor]```
+```
+docker start [id_del_contenedor]
+```
 
 Para arrancar todos los contenedores usa el siguiente comando
 
-    ```docker start $(docker ps -a -q)```
+```
+docker start $(docker ps -a -q)
+```
 
 Para detener un contenedor usa el siguiente comando.
     
-    ```docker stop [id_del_contenedor]```
+```
+docker stop [id_del_contenedor]
+```
 
 Para detener todos los contenedores usa el siguiente comando
 
-    ```docker stop $(docker ps -a -q)```
+```
+docker stop $(docker ps -a -q)
+```
 
 Para comprobar el funcionamiento de NodeRed, abre un navegador y dirigete a [localhost:1880](http://localhost:1880)
 
