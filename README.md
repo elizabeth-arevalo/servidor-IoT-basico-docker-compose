@@ -82,10 +82,38 @@ Para poder realziar este servidor, necesitas contar con lo siguiente
         ```
     - Coloca en los directorios config los archivos correspondientes a cada volumen segun se indica en el archivo YAML.
 
-5. Crear el directorio local de Compose para el archivo YAML usando el siguiente comando ```mkdir -p ~/DockerCompose```
-6. Coloca el archivo YAML de este repositorio en el directorio de Compose.
+5. Crear el directorio local de Compose para el archivo YAML usando el siguiente comando
+
+    ```mkdir -p ~/DockerCompose```
+
+6. Coloca el archivo YAML de este repositorio en el directorio de Compose. Actualiza la contraseña de MySQL en el archivo YAML.
 7. Ejecuta las configuraciones del archivo Compose con el siguiente comando ```docker-compose up -d```
 8. Comprueba que los contenedores hayan arrancado con el siguiente comando ```docker-compose ps```
+
+## Instrucciones de operación
+Para arrancar un contenedor usa el siguiente comando.
+    
+    ```docker start [id_del_contenedor]```
+
+Para arrancar todos los contenedores usa el siguiente comando
+
+    ```docker start $(docker ps -a -q)```
+
+Para detener un contenedor usa el siguiente comando.
+    
+    ```docker stop [id_del_contenedor]```
+
+Para detener todos los contenedores usa el siguiente comando
+
+    ```docker stop $(docker ps -a -q)```
+
+Para comprobar el funcionamiento de NodeRed, abre un navegador y dirigete a [localhost:1880](http://localhost:1880)
+
+Para entrar a la terminal de MySQL ejecuta el siguiente comando. Usa la contraseña que colocaste en el archivo YAML.
+
+```
+docker exec -it [id_del_contenedor]] mysql -u root -p [contraseña_en_yaml]
+```
 
 
 # FAQ
