@@ -2,8 +2,8 @@ version: '3'
 services:
   mosquitto:
     image: eclipse-mosquitto
-    volumes:
-      - ~/DockerVolumes/Mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+    #volumes:
+      #- ~/DockerVolumes/Mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
     ports:
       - "1883:1883"
       - "9001:9001"
@@ -24,9 +24,9 @@ services:
 
   nodered:
     image: nodered/node-red:latest
-    volumes:
+    #volumes:
       #- ~/DockerVolumes/NodeRED/config/settings.js:/data/settings.js
-      - ~/DockerVolumes/NodeRED/data:/data
+      #- ~/DockerVolumes/NodeRED/data:/data
     ports:
       - "1880:1880"
     networks:
@@ -35,5 +35,3 @@ services:
 networks:
   iot-network:
     driver: bridge
-
-    
