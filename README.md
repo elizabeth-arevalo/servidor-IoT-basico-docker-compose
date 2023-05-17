@@ -134,3 +134,19 @@ A continuación puedes ver una captura de como se ve cuando los contenedores fun
 - Si los problemas persisten, puedes consultar el log de cada contenedor con el siguiente comando
 
     ```docker-compose logs [id_del_servicio]```
+
+# Compatibilidad
+
+- Es encesario contar con un procesador compatible con tecnologías de virtualización
+- Se requiere un procesador x64
+- Se requieren 4GB de RAM
+- Se requiere una versión de Linux compatible con KVM
+- Docker Engine es compatible con Windows y Mac ademas de Linux en entornos IoT, Móvil, Server y Desktop. Para mas detalles, consuta la [documentación oficial de Docker](https://docs.docker.com/engine/install/).
+
+
+# Créditos
+
+Desarrollado por Hugo Escalpelo
+- [hugoescalpelo.com](https://hugoescalpelo.com/)
+- [Página en Facebook](https://www.facebook.com/Hugo-Escalpelo-Profesional-337708683840136)
+- [GitHub](https://github.com/hugoescalpelo)
