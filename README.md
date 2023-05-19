@@ -120,8 +120,9 @@ Para comprobar el funcionamiento de NodeRed, abre un navegador y dirigete a [loc
 Para entrar a la terminal de MySQL ejecuta el siguiente comando. Usa la contraseña que colocaste en el archivo YAML.
 
 ```
-docker exec -it [id_del_contenedor]] mysql -u root -p [contraseña_en_yaml]
+docker exec -it [id_del_contenedor]] mysql -u root -p
 ```
+
 Para comprobar el funcionamiento del Broker Mosqutto, solo envía un mensaje MQTT a la IP de tu equipo en tu red local.
 
 ## Resultado
